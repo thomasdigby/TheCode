@@ -1,0 +1,64 @@
+
+
+
+/* ------------------ Theme colors ------------------ */
+
+.page_home .nav_pri li a:hover,
+.page_home .nav_pri li a:focus,
+.page_home .nav_pri li.current a {
+	color: #d700c7;
+}
+.page_music .nav_pri li a:hover,
+.page_music .nav_pri li a:focus,
+.MusicHolder .nav_pri li a:hover,
+.MusicHolder .nav_pri li a:focus,
+.page_music .nav_pri li.current a,
+.MusicHolder .nav_pri li.section a  {
+	color: #b77c01;
+}
+
+.GalleryEvent .nav_pri li a:hover,
+.GalleryEvent .nav_pri li a:focus,
+.GalleryEvent .nav_pri li.current a,
+.GalleryHub .nav_pri li a:hover,
+.GalleryHub .nav_pri li a:focus,
+.GalleryHub .nav_pri li.current a,
+.GalleryHub .nav_pri li.section a {
+	color: #69e343;
+}
+.page_video .nav_pri li a:hover,
+.page_video .nav_pri li a:focus,
+.page_video .nav_pri li.current a,
+.page_video .nav_pri li.section a,
+.VideoHolder .nav_pri li a:hover,
+.VideoHolder .nav_pri li a:focus,
+.VideoHolder .nav_pri li.current a,
+.VideoHolder .nav_pri li.section a  {
+	color: #f20054;
+}
+
+
+/* ------------------ Background images ------------------ */
+
+.page_calendar,
+.Calendar {
+	background-image: url('../images/bg_calendar2.jpg');
+}
+.page_music,
+.MusicHolder {
+	background-image: url('../images/bg_music.jpg');
+}
+.page_home {
+	background-image: url('../images/bg_home2.jpg');
+}
+.page_contact {
+	background-image: url('../images/bg_contact.jpg');
+}
+.GalleryEvent,
+.GalleryHub {
+	background-image: url('../images/bg_gallery.jpg');
+}
+.page_video,
+.VideoHolder {
+	background-image: url('../images/bg_video.jpg');
+}

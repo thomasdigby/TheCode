@@ -1,0 +1,71 @@
+/* ------------------ reset --------- */
+ blockquote, body, button, caption, dd, dl, fieldset, form, h1, h2, h3, h4, h5, h6, hr, iframe, input, legend, li, ol, p, pre, select, tbody, td, textarea, tfoot, th, thead, tr, ul {
+	border: 0;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+h1, h2, h3, h4 {
+	font-weight: normal;
+}
+sub, sup {
+	font-size: 75%;
+	left: 0.1em;
+	right: 0.1em;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	top: -0.5em;
+}
+sub {
+	bottom: -0.25em;
+}
+img {
+	border: 0;
+	height: auto;
+	max-width: 100%;
+	vertical-align: middle;
+}
+.lt_ie8 img {
+	vertical-align: top;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	text-align: left;
+}
+td, th {
+	text-align: inherit;
+}
+td img {
+	vertical-align: top;
+}
+::-moz-selection {
+	background: rgba(132, 202, 217, 0.5);
+	/* #ffd900 */
+	color: #000;
+	text-shadow: none;
+}
+::selection {
+	background: rgba(132, 202, 217, 0.5);
+	/* #ffd900 */
+	color: #000;
+	text-shadow: none;
+}
+button {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+button:focus {
+	outline: 0;
+}
+::-webkit-input-placeholder {
+	color: #fff;
+	font-family: 'Open Sans', arial;
+}
+::-moz-placeholder {
+	color: #fff;
+	font-family: 'Open Sans', arial;
+}

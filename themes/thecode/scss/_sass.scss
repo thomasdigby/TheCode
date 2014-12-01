@@ -1,0 +1,70 @@
+/* ---------------------------------------- Variables ---------------------------------------- */
+
+/* Typography baseline (in px/ratio) */
+$docFontSize: 16;
+$docLineHeight: 1.25; /* 20px */
+
+/* Colors */
+$amber: #b77c01;
+$blue: #42e4f0;
+$green: #69e343;
+$magenta: #d700c7;
+$red: #f20054;
+
+/* Breakpoints (in px) */
+$lap: 540;
+$desk: 820;
+
+/* ---------------------------------------- Mixins ---------------------------------------- */
+
+/* ------------------------------ Background size */
+@mixin background-size($property) {
+	-webkit-background-size: $property;
+	   -moz-background-size: $property;
+		 -o-background-size: $property;
+			background-size: $property;
+}
+
+/* ------------------------------ Background gradient */
+@mixin background-gradient($startPos, $firstColor, $lastColor) {
+	background: -webkit-linear-gradient($startPos, $firstColor 0%, $lastColor 100%);
+	background: -moz-linear-gradient($startPos, $firstColor 0%, $lastColor 100%);
+	background: -ms-linear-gradient($startPos, $firstColor 0%, $lastColor 100%);
+	background: -o-linear-gradient($startPos, $firstColor 0%, $lastColor 100%);
+	background: linear-gradient($startPos, $firstColor 0%, $lastColor 100%);
+}
+
+/* ------------------------------ Box shadow */
+@mixin box-shadow($inset, $top, $left, $blur, $spread, $color) {
+	-webkit-box-shadow: $inset $top $left $blur $spread $color;
+			box-shadow: $inset $top $left $blur $spread $color;
+}
+
+/* ------------------------------ Transform */
+@mixin rotate( $degrees ) {
+	-webkit-transform: rotate(#{$degrees}deg);
+	   -moz-transform: rotate(#{$degrees}deg);
+		-ms-transform: rotate(#{$degrees}deg);
+		 -o-transform: rotate(#{$degrees}deg);
+			transform: rotate(#{$degrees}deg);
+}
+
+/* ------------------------------ Transition */
+@mixin transition($vars) {
+	-webkit-transition: $vars;
+	   -moz-transition: $vars;
+		 -o-transition: $vars;
+			transition: $vars;
+}
+
+/* ------------------------------ Media Queries */
+/*
+	$point:			Breakpoint integer in px
+	$constraint:	Constraint for media query (min/max)
+	$feature:		Media feature of query (width/height)
+*/
+@mixin mq($point, $constraint: min, $feature: width) {
+	@media screen and (#{$constraint}-#{$feature}: $point / $docFontSize + em) {
+		@content;
+	}
+}
